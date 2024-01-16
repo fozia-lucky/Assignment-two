@@ -6,7 +6,19 @@
 
 /* Shared Styles styles*/
 
-
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    color: white;
+    width: 180px;
+    height: 64px;
+    flex-shrink: 0;
+    font-size: 20px;
+    padding: 20px 25px;
+    margin-bottom: 5px;
+    border-style: none;
+    cursor: pointer;
+}
 
 /* Header styles*/
 header {
@@ -189,7 +201,39 @@ button:hover {
     background-color: #2074a0;
     /* Change the hover background color as needed */
 }
+/* main section styles
+ */
+ main{
+    padding: 52px 135px;
+}
+.First-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.First-content > div {
+    width: 48%; /* Adjust the width as needed */
+}
+.First-content h4{
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+}
+.First-content p{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+}
+.First-content li{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+}
+.First-content img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* General Styles */
 @media only screen and (max-width: 576px) {
@@ -300,6 +344,36 @@ button:hover {
 
 
     }
+    main{
+        padding: 20px;
+
+    }
+    .First-content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        width: 100%; /* Center content in column layout */
+    }
+
+    .First-content > div {
+        width: 100%; /* Adjust the width for full width */
+        margin-bottom: 20px; /* Add space between the two divs */
+    }
+
+    .First-content h4 {
+        font-size: 24px; /* Adjust heading font size */
+    }
+
+    .First-content p,
+    .First-content li {
+        font-size: 14px; /* Adjust paragraph and list item font size */
+    }
+
+    .First-content img {
+        width: 100%; /* Make the image fill the container */
+        height: auto;
+    }
+   
 }
 
 /* Tablet Styles */
@@ -320,4 +394,29 @@ button:hover {
     .banner-content p {
         font-size: 16px;
     }
+    .First-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .First-content > div {
+        width: 48%;
+        margin-bottom: 0; /* Reset margin for the divs */
+    }
+
+    .First-content h4 {
+        font-size: 40px;
+    }
+
+    .First-content p,
+    .First-content li {
+        font-size: 16px;
+    }
+
+    .First-content img {
+        max-width: 100%;
+        height: auto;
+    }
+  
+  
 }
