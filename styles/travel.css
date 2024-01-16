@@ -12,6 +12,7 @@
 header {
     padding: 52px 135px;
 }
+
 /* nav styles*/
 
 nav {
@@ -20,8 +21,12 @@ nav {
     align-items: center;
 
 }
+
 nav>ul {
     display: flex;
+    align-items: center;
+    /* Align the items vertically in the center */
+
 }
 
 nav li {
@@ -29,48 +34,79 @@ nav li {
     margin-right: 30px;
     text-align: center;
     color: var(--Dark-02, #424247);
-font-family: Mulish;
-font-size: 18px;
-font-weight: 400;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
 
 }
-nav li span{
+
+nav li span {
     color: #FF5400;
-text-align: center;
-font-family: Mulish;
-font-size: 18px;
-font-weight: 700;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 700;
 }
-.company-name{
+
+/* hamburger menu */
+
+.menu-toggle {
+    display: none;
+    /* Initially hide the hamburger menu toggle */
+    cursor: pointer;
+    margin-left: 100px;
+    /* Push the menu toggle to the right */
+
+
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+
+}
+
+.company-name {
     color: #131318;
-font-family: Mulish;
-font-size: 36px;
-font-weight: 800;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
 }
-.company-name span{
+
+.company-name span {
     color: #FF5400;
-font-family: Mulish;
-font-size: 36px;
-font-weight: 800;
+    font-family: Mulish;
+    font-size: 36px;
+    font-weight: 800;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
 
 .logo-and-name {
     display: flex;
     align-items: center;
+
+
+
 }
 
 .logo img {
-    max-width: 100px; 
+    max-width: 100px;
     height: auto;
-    margin-right: 10px; 
+    margin-right: 10px;
 }
 
 .company-name h3 {
     margin: 0;
+    white-space: nowrap;
+    /* Prevent the company name from breaking into two lines */
+
 }
+
 /* banner styles */
 .banner {
     border-radius: 16px;
@@ -81,91 +117,182 @@ nav a{
     background-size: cover;
     margin-top: 25px;
     color: white;
-    
-}
-.banner-content h4{
-padding: 60px;   
- color: #FFF;
-text-align: center;
-font-family: Mulish;
-font-size: 64px;
-font-weight: 800;
 
 }
-.banner-content p{
-   
+
+.banner-content h4 {
+    padding: 60px;
     color: #FFF;
-text-align: center;
-font-family: Mulish;
-font-size: 16px;
-font-weight: 400;
-position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 64px;
+    font-weight: 800;
+
 }
 
-.form-container{
-    display:  flex;
+.banner-content p {
+
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-container {
+    display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
+    gap: 16px;
 
 }
-.form-background{
-    display:  flex;
+
+.form-background {
+    display: flex;
     gap: 10px;
 
+
+
     border-radius: 8px;
-background: rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.30);
 
 
 }
+
 input,
 select,
 button {
     margin: 10px 10px;
     color: rgba(19, 19, 24, 0.50);
-
-
     padding: 8px;
     border-radius: 8px;
     font-size: 14px;
-    width: 124px; 
+    width: 124px;
     height: 54;
-    border: none; 
-    outline: none; 
+    border: none;
+    outline: none;
 
 }
 
-button{
-background: #FF5400;
-color: #FFF;
+button {
+    background: #FF5400;
+    color: #FFF;
 
 }
 
 
 
 button:hover {
-    background-color: #2074a0; /* Change the hover background color as needed */
+    background-color: #2074a0;
+    /* Change the hover background color as needed */
 }
 
+
 @media screen and (max-width: 576px) {
-    
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav>ul {
+        display: none;
+        /* Hide the regular nav list on small screens */
         flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        /* Adjust background color as needed */
+        z-index: 1;
     }
-    /*tablet*/
-    @media screen and  (min-width:576px) and (max-width:960px){
-        header{
-            padding: 20px;
-        }
-        nav{
-            flex-direction: column;
-        }
+
+    nav>ul.show {
+        display: flex;
+        /* Show the nav list when the hamburger menu is clicked */
+
+    }
+
+    .menu-toggle {
+        display: block;
+        /* Show the hamburger menu toggle on small screens */
+        margin-right: auto 0 ;
+    }
+
+
+
+    .logo-and-name {
+        flex-direction: row;
+        /* Stack the logo and company name vertically */
+        align-items: center;
+
+
+    }
+
+
+    .company-name h3,
+    .company-name span {
+        font-size: 20px;
+        /* Adjust font size as needed */
+    }
+    .banner {
         
-    }
+        height: 500px;
+        width: 100%;
+        border-radius: 16px;
+        
     
+    }
+
+    .banner-content h4 {
+        font-size: 22px;
+        white-space: nowrap;
+        /* Prevent the company name from breaking into two lines */
+
+    }
+
+    .banner-content p {
+
+        font-size: 14px;
+        position: absolute;
+        top: 33%; /* Adjust as needed */
+        transform: translate(-50%, -50%);
+        left: 50%;    }
+
+    .form-container {
+         width: 100%;
+
+    }
+
+    .form-background {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        /* Ensure form elements are in a single column */
+
+    }
+
+    
+    select,
+    button {
+        width: 200px;
+        height: 35px;
+
+    }
+    #textbox1{
+        width: 182px;
+        height: 24px;
+
+    }
+   
+
+
+
+
+
+}
