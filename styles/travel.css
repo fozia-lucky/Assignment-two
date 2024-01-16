@@ -114,7 +114,7 @@ nav a {
     height: 400px;
     width: 100%;
     border-radius: 16px;
-    background-size: cover;
+    background-position: center;
     margin-top: 25px;
     color: white;
 
@@ -127,6 +127,8 @@ nav a {
     font-family: Mulish;
     font-size: 64px;
     font-weight: 800;
+    margin-bottom: 2px;
+
 
 }
 
@@ -137,10 +139,9 @@ nav a {
     font-family: Mulish;
     font-size: 16px;
     font-weight: 400;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
+
+
 }
 
 .form-container {
@@ -190,23 +191,35 @@ button:hover {
 }
 
 
-@media screen and (max-width: 576px) {
+/* General Styles */
+@media only screen and (max-width: 576px) {
     header {
         padding: 20px;
     }
 
-    nav>ul {
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: auto 0;
+
+    }
+
+    nav ul {
         display: none;
-        /* Hide the regular nav list on small screens */
         flex-direction: column;
         align-items: center;
-        position: absolute;
+        width: 100%;
         top: 70px;
         left: 0;
-        width: 100%;
-        background-color: #fff;
-        /* Adjust background color as needed */
+        position: absolute;
+        text-align: center;
+        margin-top: 10px;
         z-index: 1;
+
     }
 
     nav>ul.show {
@@ -215,84 +228,96 @@ button:hover {
 
     }
 
-    .menu-toggle {
-        display: block;
-        /* Show the hamburger menu toggle on small screens */
-        margin-right: auto 0 ;
+    nav li {
+        margin: 0;
+        padding: 10px;
     }
-
-
 
     .logo-and-name {
         flex-direction: row;
-        /* Stack the logo and company name vertically */
         align-items: center;
-
-
     }
 
+    .logo img {
+        max-width: 80px;
+        /* Adjust the max-width for the logo */
+        height: auto;
+        margin-right: 10px;
+    }
 
     .company-name h3,
     .company-name span {
         font-size: 20px;
+        margin-top: 10px;
+
         /* Adjust font size as needed */
     }
-    .banner {
-        
-        height: 500px;
-        width: 100%;
-        border-radius: 16px;
-        
-    
+
+    .banner-content {
+        text-align: center;
     }
 
     .banner-content h4 {
-        font-size: 22px;
-        white-space: nowrap;
-        /* Prevent the company name from breaking into two lines */
-
+        padding: 20px;
+        font-size: 24px;
     }
 
     .banner-content p {
-
         font-size: 14px;
-        top: 27%;
-        position: absolute;
-        
-    
+        margin-bottom: 20px;
+        /* Add margin to separate p from form container */
+
     }
 
     .form-container {
-         width: 100%;
-         margin-top: 20px; /* Adjust the margin based on your design preferences */
+        width: 100%;
+        max-width: 300px;
+        /* Adjust the max-width as needed */
+        margin: 0 auto;
+        padding: 8px;
+        /* Center the form container and add margin */
 
 
     }
 
     .form-background {
-        display: flex;
-        gap: 16px;
         flex-direction: column;
-        /* Ensure form elements are in a single column */
+        align-items: center;
+        padding: 8px;
+        /* Center the form container and add margin */
 
+        gap: 5px;
     }
 
-    
+    input,
     select,
     button {
-        width: 200px;
-        height: 35px;
+        width: 100%;
+        max-width: 100%;
+        /* Make the input, select, and button fill the container */
+        box-sizing: border-box;
+        /* Include padding and border in the total width */
+
 
     }
-    #textbox1{
-        width: 182px;
-        height: 24px;
+}
 
+/* Tablet Styles */
+@media only screen and (min-width: 577px) and (max-width: 960px) {
+    header {
+        padding: 30px;
     }
-   
 
+    .banner {
+        height: 300px;
+    }
 
+    .banner-content h4 {
+        padding: 40px;
+        font-size: 48px;
+    }
 
-
-
+    .banner-content p {
+        font-size: 16px;
+    }
 }
