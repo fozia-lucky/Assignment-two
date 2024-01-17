@@ -235,6 +235,37 @@ font-weight: 400;
     height: auto;
 }
 
+
+.Second-content h3{ 
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+text-align: center;
+
+
+}
+.Second-content p{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+
+}
+.image-box .row {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px; /* Adjust the gap as needed */
+}
+
+.image-box .row img {
+    flex: 1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the container */
+    max-width: 100%; /* Images should cover the entire row */
+    width: 0; /* Ensure the image takes up the available width */
+}
+
 /* General Styles */
 @media only screen and (max-width: 576px) {
     header {
@@ -364,6 +395,7 @@ font-weight: 400;
         font-size: 24px; /* Adjust heading font size */
     }
 
+
     .First-content p,
     .First-content li {
         font-size: 14px; /* Adjust paragraph and list item font size */
@@ -372,6 +404,26 @@ font-weight: 400;
     .First-content img {
         width: 100%; /* Make the image fill the container */
         height: auto;
+    }
+
+    .Second-content h3 {
+        font-size: 24px; /* Adjust heading font size */
+    }
+    
+
+    .Second-content p
+     {
+        font-size: 14px; /* Adjust paragraph and list item font size */
+    }
+    .image-box .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-box .row img {
+        max-width: 100%;
+        width: 100%;
+    }
     }
    
 }
@@ -416,6 +468,14 @@ font-weight: 400;
     .First-content img {
         max-width: 100%;
         height: auto;
+    }
+
+    .Second-content h3 {
+        font-size: 40px;
+    }
+
+    .Second-content p {
+        font-size: 16px;
     }
   
   
