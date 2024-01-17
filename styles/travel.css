@@ -13,11 +13,13 @@
     width: 180px;
     height: 64px;
     flex-shrink: 0;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 800;
     padding: 20px 25px;
     margin-bottom: 5px;
     border-style: none;
     cursor: pointer;
+
 }
 
 /* Header styles*/
@@ -493,6 +495,87 @@ font-weight: 800;
     margin-bottom: 10px; /* Add some bottom margin for better spacing */
 }
 
+.Fifth-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Fifth-content>div {
+    width: 48%;
+    /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+.Fifth-content h4 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.Fifth-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Fifth-content li {
+    color: #131318;
+font-size: 16px;
+font-weight: 700;
+}
+
+.Fifth-content iframe {
+    max-width: 100%;
+    border-radius: 8px;
+    max-height: 100%;
+}
+.Sixth-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sixth-content h6{ 
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: -15px;
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+text-align: justify;
+}
+.Sixth-content p{
+    margin-right: 50px;
+
+    margin-left: 50px;
+    color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.Sixth-content>div {
+    width: 48%;
+    /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    border-radius: 16px;
+border: 1px solid #FF5400;
+}
+
+input, .btn-8 {
+    width: 80%;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid;
+}
 
 
 /* General Styles */
@@ -713,7 +796,38 @@ font-weight: 800;
     margin-top: 5px; /* Adjust the margin as needed */
 }
 
-    
+.Fifth-content {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* Center content in column layout */
+}
+
+.Fifth-content>div {
+    width: 100%;
+    /* Adjust the width for full width */
+    margin-bottom: 20px;
+    /* Add space between the two divs */
+}
+
+.Fifth-content h4 {
+    font-size: 24px;
+    /* Adjust heading font size */
+}
+
+
+.Fifth-content p,
+.Fifth-content li {
+    font-size: 14px;
+    /* Adjust paragraph and list item font size */
+}
+
+.Fifth-content iframe {
+    width: 100%;
+    /* Make the image fill the container */
+    height: 100%;
+} 
 
 }
 
