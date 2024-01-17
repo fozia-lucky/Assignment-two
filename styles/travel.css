@@ -266,6 +266,80 @@ text-align: center;
     width: 0; /* Ensure the image takes up the available width */
 }
 
+.Third-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Third-content h3{ 
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+text-align: center;
+
+
+}
+
+.Third-content p{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+text-align: center;
+}
+.Third-content h4{ 
+    color: #131318;
+font-size: 20px;
+font-weight: 800;
+}
+
+.div-in-one-row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.div-in-one-row p{
+    text-align: justify;
+}
+.third-div {
+    padding: 20px;
+    margin: 10px;
+    width: 50%; /* Set the width to a desired value */
+    box-sizing: border-box; /* Include padding and border in total width */
+}
+.third-div h4{
+    text-align: justify;
+
+}
+
+.first-div{
+    border-radius: 16px;
+border: 1px solid rgba(251, 181, 99, 0.20);
+background: rgba(251, 181, 99, 0.05);
+}
+.second-div{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.third-div{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.first-div, .second-div, .third-div  {
+    padding: 20px;
+    margin: 10px; /* Adjust the margin as needed for space between divs */
+    text-align: justify;
+    align-items: center;
+}
+
+.first-div, .second-div, .third-div p {
+    
+    text-align: justify;
+}
+
+
 /* General Styles */
 @media only screen and (max-width: 576px) {
     header {
@@ -424,7 +498,12 @@ text-align: center;
         max-width: 100%;
         width: 100%;
     }
+    .div-in-one-row{
+      
+        flex-direction: column;
     }
+    .third-div{
+        width: 100%;    }
    
 }
 
