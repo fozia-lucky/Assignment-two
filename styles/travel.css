@@ -201,69 +201,82 @@ button:hover {
     background-color: #2074a0;
     /* Change the hover background color as needed */
 }
+
 /* main section styles
  */
- main{
+main {
     padding: 52px 135px;
 }
+
 .First-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.First-content > div {
-    width: 48%; /* Adjust the width as needed */
+.First-content>div {
+    width: 48%;
+    /* Adjust the width as needed */
 }
-.First-content h4{
+
+.First-content h4 {
     color: #131318;
-font-size: 40px;
-font-weight: 800;
+    font-size: 40px;
+    font-weight: 800;
 }
-.First-content p{
+
+.First-content p {
     color: rgba(19, 19, 24, 0.70);
-font-size: 16px;
-font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
-.First-content li{
+
+.First-content li {
     color: rgba(19, 19, 24, 0.70);
-font-size: 16px;
-font-weight: 400;
+    font-size: 16px;
+    font-weight: 400;
 }
+
 .First-content img {
     max-width: 100%;
     height: auto;
 }
 
 
-.Second-content h3{ 
+.Second-content h3 {
     color: #131318;
-font-size: 40px;
-font-weight: 800;
-text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
 
 
 }
-.Second-content p{
+
+.Second-content p {
     color: rgba(19, 19, 24, 0.70);
-font-size: 16px;
-font-weight: 400;
-text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 
 }
+
 .image-box .row {
     display: flex;
     margin-bottom: 20px;
-    gap: 10px; /* Adjust the gap as needed */
+    gap: 10px;
+    /* Adjust the gap as needed */
 }
 
 .image-box .row img {
     flex: 1;
     box-sizing: border-box;
     border-radius: 8px;
-    object-fit: cover; /* Ensure the image covers the container */
-    max-width: 100%; /* Images should cover the entire row */
-    width: 0; /* Ensure the image takes up the available width */
+    object-fit: cover;
+    /* Ensure the image covers the container */
+    max-width: 100%;
+    /* Images should cover the entire row */
+    width: 0;
+    /* Ensure the image takes up the available width */
 }
 
 .Third-content {
@@ -271,73 +284,215 @@ text-align: center;
     flex-direction: column;
     align-items: center;
 }
-.Third-content h3{ 
+
+.Third-content h3 {
     color: #131318;
-font-size: 40px;
-font-weight: 800;
-text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
 
 
 }
 
-.Third-content p{
+.Third-content p {
     color: rgba(19, 19, 24, 0.70);
-font-size: 16px;
-font-weight: 400;
-text-align: center;
-}
-.Third-content h4{ 
-    color: #131318;
-font-size: 20px;
-font-weight: 800;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
 }
 
-.div-in-one-row{
+.Third-content h4 {
+    color: #131318;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.div-in-one-row {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
 }
-.div-in-one-row p{
+
+.div-in-one-row p {
     text-align: justify;
 }
+
 .third-div {
     padding: 20px;
     margin: 10px;
-    width: 50%; /* Set the width to a desired value */
-    box-sizing: border-box; /* Include padding and border in total width */
+    width: 50%;
+    /* Set the width to a desired value */
+    box-sizing: border-box;
+    /* Include padding and border in total width */
 }
-.third-div h4{
+
+.third-div h4 {
     text-align: justify;
 
 }
 
-.first-div{
+.first-div {
     border-radius: 16px;
-border: 1px solid rgba(251, 181, 99, 0.20);
-background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
 }
-.second-div{
+
+.second-div {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
-.third-div{
+
+.third-div {
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
 }
-.first-div, .second-div, .third-div  {
+
+.first-div,
+.second-div,
+.third-div {
     padding: 20px;
-    margin: 10px; /* Adjust the margin as needed for space between divs */
+    margin: 10px;
+    /* Adjust the margin as needed for space between divs */
     text-align: justify;
     align-items: center;
 }
 
-.first-div, .second-div, .third-div p {
-    
+.first-div,
+.second-div,
+.third-div p {
+
     text-align: justify;
 }
+
+.Forth-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Forth-content h3 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+
+
+}
+
+.Forth-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+.Forth-content h6{
+    color: #FF5400;
+font-size: 20px;
+font-weight: 800;
+}
+.Forth-content h5{
+    color: #131318;
+font-size: 24px;
+font-weight: 800;
+}
+
+.first-offer {
+    border-radius: 16px;
+    background: url('../Images/Group\ 39.png'), lightgray 50% / cover no-repeat;
+    width: 100%;
+    border-radius: 16px;
+    background-position: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.first-offer-content {
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    /* Set the width to a desired value */
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    text-align: justify;
+    float: right; /* Float the element to the right */
+
+
+
+}
+
+/* Additional styling for better readability */
+.first-offer-content p {
+    text-align: justify;
+    margin-bottom: 10px; /* Add some bottom margin for better spacing */
+}
+
+.second-offer {
+    border-radius: 16px;
+
+    border-radius: 16px;
+    background: url('../Images/Group\ 40.png'), lightgray 50% / cover no-repeat;
+    width: 100%;
+    border-radius: 16px;
+    background-position: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.second-offer-content {
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    /* Set the width to a desired value */
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    text-align: justify;
+
+}
+.second-offer-content p {
+    text-align: justify;
+    margin-bottom: 10px; /* Add some bottom margin for better spacing */
+}
+
+.third-offer {
+    border-radius: 16px;
+    background: url('../Images/Group\ 39.png'), lightgray 50% / cover no-repeat;
+    width: 100%;
+    border-radius: 16px;
+    background-position: center;
+    margin-top: 25px;
+    color: white;
+    text-align: justify;
+
+}
+.third-offer-content {
+    padding: 20px;
+    margin: 30px;
+    width: 50%;
+    /* Set the width to a desired value */
+    box-sizing: border-box;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    text-align: justify;
+    float: right; /* Float the element to the right */
+
+
+}
+.third-offer-content p {
+    text-align: justify;
+    margin-bottom: 10px; /* Add some bottom margin for better spacing */
+}
+
 
 
 /* General Styles */
@@ -449,46 +604,56 @@ background: rgba(251, 181, 99, 0.05);
 
 
     }
-    main{
+
+    main {
         padding: 20px;
 
     }
+
     .First-content {
         flex-direction: column;
         display: flex;
         align-items: center;
-        width: 100%; /* Center content in column layout */
+        width: 100%;
+        /* Center content in column layout */
     }
 
-    .First-content > div {
-        width: 100%; /* Adjust the width for full width */
-        margin-bottom: 20px; /* Add space between the two divs */
+    .First-content>div {
+        width: 100%;
+        /* Adjust the width for full width */
+        margin-bottom: 20px;
+        /* Add space between the two divs */
     }
 
     .First-content h4 {
-        font-size: 24px; /* Adjust heading font size */
+        font-size: 24px;
+        /* Adjust heading font size */
     }
 
 
     .First-content p,
     .First-content li {
-        font-size: 14px; /* Adjust paragraph and list item font size */
+        font-size: 14px;
+        /* Adjust paragraph and list item font size */
     }
 
     .First-content img {
-        width: 100%; /* Make the image fill the container */
+        width: 100%;
+        /* Make the image fill the container */
         height: auto;
     }
 
     .Second-content h3 {
-        font-size: 24px; /* Adjust heading font size */
+        font-size: 24px;
+        /* Adjust heading font size */
     }
-    
 
-    .Second-content p
-     {
-        font-size: 14px; /* Adjust paragraph and list item font size */
+
+    .Second-content p {
+        font-size: 14px;
+        /* Adjust paragraph and list item font size */
     }
+
     .image-box .row {
         flex-direction: column;
         align-items: center;
@@ -498,13 +663,58 @@ background: rgba(251, 181, 99, 0.05);
         max-width: 100%;
         width: 100%;
     }
-    .div-in-one-row{
-      
+
+    .div-in-one-row {
+
         flex-direction: column;
     }
-    .third-div{
-        width: 100%;    }
-   
+
+    .third-div {
+        width: 100%;
+    }
+    
+
+    .first-offer-content,
+    .second-offer-content,
+    .third-offer-content {
+        width: 50%;
+        margin: 8px auto;
+        max-height: 300px; /* Set a maximum height as needed */
+        overflow: hidden; 
+        margin-top: 80px;
+        margin-right: 50px;/* Hide overflow */
+    }
+
+    .first-offer-content,
+    .second-offer-content,
+    .third-offer-content h5,
+    .third-offer-content p,
+    .third-offer-content h6,
+    .second-offer-content h5,
+    .second-offer-content p,
+    .second-offer-content h6,
+    .first-offer-content h5,
+    .first-offer-content p,
+    .first-offer-content h6 {
+        font-size: 10px; /* Adjust font size as needed */
+    }
+    .first-offer-content p,
+.second-offer-content p,
+.third-offer-content p,
+.first-offer-content h6,
+.second-offer-content h6,
+.third-offer-content h6 {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}
+
+.first-offer-content button,
+.second-offer-content button,
+.third-offer-content button {
+    margin-top: 5px; /* Adjust the margin as needed */
+}
+
+    
+
 }
 
 /* Tablet Styles */
@@ -525,14 +735,16 @@ background: rgba(251, 181, 99, 0.05);
     .banner-content p {
         font-size: 16px;
     }
+
     .First-content {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .First-content > div {
+    .First-content>div {
         width: 48%;
-        margin-bottom: 0; /* Reset margin for the divs */
+        margin-bottom: 0;
+        /* Reset margin for the divs */
     }
 
     .First-content h4 {
@@ -556,6 +768,6 @@ background: rgba(251, 181, 99, 0.05);
     .Second-content p {
         font-size: 16px;
     }
-  
-  
+
+
 }
