@@ -568,7 +568,7 @@ form {
 border: 1px solid #FF5400;
 }
 
-input, .btn-8 {
+.Sixth-content input, .btn-8 {
     width: 80%;
     padding: 10px;
     margin-left: 50px;
@@ -576,6 +576,89 @@ input, .btn-8 {
     box-sizing: border-box;
     border: 2px solid;
 }
+.footer {
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.footer-logo-and-name {
+    margin-top: 100px;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin between logo and extra content */
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer-company-name h3 {
+    margin: 0;
+    white-space: nowrap;
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-company-name span {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.extra-content {
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.extra-content p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+hr {
+    width: 100%;
+    margin: 10px;
+    color: rgb(219, 153, 26);
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin: auto; /* Updated to center horizontally */
+    font-size: 35px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-icons a i {
+    color: #000000; /* Black color */
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 50%; /* Optional: Round the corners for a circular shape */
+}
+
+
+
+
+span {
+    margin: 10px;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 
 
 /* General Styles */
@@ -828,6 +911,29 @@ input, .btn-8 {
     /* Make the image fill the container */
     height: 100%;
 } 
+.Sixth-content, .Sixth-content>div, form {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.Sixth-content {
+    flex-direction: column;
+}
+
+.Sixth-content h6
+{
+    color: #131318;
+font-family: Mulish;
+font-size: 20px;
+font-weight: 800;
+}
+.Sixth-content p
+{
+    color: #5A5A5D;
+font-size: 14px;
+font-weight: 400;
+}
+
 
 }
 
